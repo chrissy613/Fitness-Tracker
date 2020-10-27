@@ -1,4 +1,7 @@
 var db = require("../models");
+var Workout = db.Workout;
+
+var path = require("path");
 
 module.exports= function(app){
     app.get("/all", function (req, res) {
@@ -10,4 +13,6 @@ module.exports= function(app){
             res.json(err);
         });
     });
-}
+    
+
+}   
