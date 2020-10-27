@@ -13,6 +13,9 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
+
+mongodb+srv://Chris:pw@chris.blylg.mongodb.net/workout?retryWrites=true&w=majority
+
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { 
   useNewUrlParser: true,
   useFindAndModify: false
